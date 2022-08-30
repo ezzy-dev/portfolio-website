@@ -1,7 +1,6 @@
 a {
     margin: 8px 0px;
     font-size: 22px;
-    color:white;
 }
 
 .header-container,
@@ -12,19 +11,22 @@ a {
 
 .header-container {
     justify-content: space-between;
-    background-color: darkslategray;
+    background-color: #41424C;
     border-radius: 32px;
 }
 
 .header-left {
     margin-left: 32px;
-    flex: 3;
 }
 
 .header-right {
     justify-content: space-between;
+    align-self: flex-end;
     margin-right: 32px;
-    flex: 1;
+
+    :not(:last-child) {
+        margin-right: 40px;
+    }
 }
 
 
