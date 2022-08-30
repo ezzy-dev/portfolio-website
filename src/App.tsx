@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "./components/header/Header";
 import Footer from './components/footer/Footer';
 import AppRouter from './navigation/AppRouter';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
