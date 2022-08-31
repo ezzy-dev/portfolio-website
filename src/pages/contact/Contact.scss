@@ -1,9 +1,13 @@
 .contact {
-    margin: 0px 64px;
+    margin: 0px 256px;
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
+
+    &__heading {
+        font-size: 64px;
+    }
 
     &__left,
     &__right { 
@@ -12,11 +16,36 @@
     }   
 
     &__description {
-        margin: 8px 192px;
+        max-width: 256px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     &__item {
         margin-bottom: 32px;
+    }
+
+    &__item,
+    &__primary-email,
+    &__description {
+        font-size: 22px;
+    }
+
+    @media screen 
+    and (min-device-width: 1201px)
+    and (max-device-width: 1600px){
+        margin: 0px 128px;
+    }
+
+    @media screen 
+    and (min-device-width: 769px)
+    and (max-device-width: 1200px) {
+        margin: 0px 64px;
+    }
+
+    @media screen 
+    and (max-device-width: 768px) {
+        margin: 0px 8px;
     }
 }
 

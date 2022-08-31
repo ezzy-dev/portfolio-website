@@ -7,7 +7,7 @@
 body {
     height: 100vh;
     font-family: 'Poppins';
-    background-color: beige;
+    background-color: #FAFDF3;
 }
 
 .container {
@@ -18,5 +18,7 @@ body {
 
 a {
     text-decoration: none;
+    display: inline-block;
+    color: inherit;
 }
 

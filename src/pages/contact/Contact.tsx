@@ -5,7 +5,7 @@ function Contact(): JSX.Element {
   return (
     <div className="contact">
       <div className="contact__left">
-        <h1>Contact Me!</h1>
+        <h1 className="contact__heading">Contact Me!</h1>
         <p className="contact__description">
           Want to contact me for any reason? Please feel free to reach out using
           any of the contact information provided and I&rsquo;ll get back with
@@ -14,13 +14,17 @@ function Contact(): JSX.Element {
       </div>
       <div className="contact__right">
         <h2>Email(s)</h2>
-        <p className="contact__item">
+        <a className="contact__primary-email" href="mailto:jordanrwm@gmail.com">
           Primary: jordanrwm@gmail.com
-          <br />
+        </a>
+        <br />
+        <a className="contact__item" href="mailto:myers3jr@mail.uc.edu">
           Secondary: myers3jr@mail.uc.edu
-        </p>
+        </a>
         <h2>Telephone</h2>
-        <p className="contact__item">(513) 716 - 0356</p>
+        <a className="contact__item" href="tel:5137160356">
+          (513) 716-0356
+        </a>
         <h2>GitHub</h2>
         <a className="contact__item" href="https://github.com/ezzy-dev">
           Click here to view my GitHub
