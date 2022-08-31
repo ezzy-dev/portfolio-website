@@ -13,7 +13,7 @@ function Contact(): JSX.Element {
         </p>
       </div>
       <div className="contact__right">
-        <h2>Email(s)</h2>
+        <h2 className="contact__secondary-heading">Email(s)</h2>
         <a className="contact__primary-email" href="mailto:jordanrwm@gmail.com">
           Primary: jordanrwm@gmail.com
         </a>
@@ -21,15 +21,15 @@ function Contact(): JSX.Element {
         <a className="contact__item" href="mailto:myers3jr@mail.uc.edu">
           Secondary: myers3jr@mail.uc.edu
         </a>
-        <h2>Telephone</h2>
+        <h2 className="contact__secondary-heading">Telephone</h2>
         <a className="contact__item" href="tel:5137160356">
           (513) 716-0356
         </a>
-        <h2>GitHub</h2>
+        <h2 className="contact__secondary-heading">GitHub</h2>
         <a className="contact__item" href="https://github.com/ezzy-dev">
           Click here to view my GitHub
         </a>
-        <h2>LinkedIn</h2>
+        <h2 className="contact__secondary-heading">LinkedIn</h2>
         <a
           className="contact__item"
           href="https://www.linkedin.com/in/jordan-myers-366067184/"
