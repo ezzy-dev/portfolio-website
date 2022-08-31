@@ -21,6 +21,11 @@
         max-width: 256px;
         margin-right: auto;
         margin-left: auto;
+
+        @media screen 
+        and (max-device-width: 1000px) {
+            margin-bottom: 64px;
+        }
     }
 
     &__item {
