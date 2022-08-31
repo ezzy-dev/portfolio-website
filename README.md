@@ -1,5 +1,8 @@
 # Project notes/to-do
 
+1. ADD A HAMBURGER MENU!
+2. Add mobile responsiveness
+
 ### Landing page
 
 I would like to include the following in my landing page:
