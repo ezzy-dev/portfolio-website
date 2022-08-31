@@ -1,31 +1,31 @@
-a {
-    margin: 8px 0px;
-    font-size: 22px;
-}
-
-.header-container,
-.header-left,
-.header-right {
-    display: flex;
-}
-
-.header-container {
+.header {
     justify-content: space-between;
     background-color: #41424C;
-    border-radius: 32px;
-}
+    display: flex;
 
-.header-left {
-    margin-left: 32px;
-}
+    &__left,   
+    &__right {
+        display: flex;
+    }
 
-.header-right {
-    justify-content: space-between;
-    align-self: flex-end;
-    margin-right: 32px;
+    &__left {
+        margin-left: 32px;
+    }
 
-    :not(:last-child) {
-        margin-right: 40px;
+    &__right {
+        justify-content: space-between;
+        align-self: flex-end;
+        margin-right: 32px;
+
+        :not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    &__link {
+        margin: 8px 0px;
+        font-size: 22px;
+        color: beige;
     }
 }
 
