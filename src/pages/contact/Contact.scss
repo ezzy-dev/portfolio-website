@@ -5,6 +5,17 @@
     align-items: center;
     justify-content: center;
 
+    &__heading,
+    &__secondary-heading {
+        color: #CE5C93;
+    }
+
+    &__item,
+    &__description,
+    &__primary-email {
+        color: #41424C;
+    }
+
     &__heading {
         font-size: 64px;
         margin-bottom: 16px;
