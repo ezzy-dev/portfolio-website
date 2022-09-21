@@ -9,7 +9,7 @@ function Home(): JSX.Element {
         <img src={bodyshot} />
       </div>
       <div className="home__text">
-        <h1>Jordan Myers Portfolio Website</h1>
+        <h1 className="home__header">Jordan Myers Portfolio Website</h1>
         <h2>A project for CS5167 - User Interface I</h2>
       </div>
     </div>
