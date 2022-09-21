@@ -1,0 +1,38 @@
+.project-card {
+    height: 800px;
+    width: 450px;
+    border: 2px solid #41424C;
+    border-radius: 16px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    &__thumbnail-img {
+        width: 300px;
+        margin-bottom: 32px;
+    }
+
+    &__description {
+        margin-bottom: 64px;
+    }
+
+    &__link {
+        background: #41424C;
+        color: #FAFDF3;
+        padding: 8px 16px;
+        border-radius: 16px;
+    }
+}

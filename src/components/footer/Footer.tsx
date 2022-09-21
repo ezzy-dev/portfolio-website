@@ -4,7 +4,7 @@ import "./Footer.scss";
 function Footer(): JSX.Element {
   return (
     <footer className="footer">
-      <p>Est. 2022 - Powered by Ezzy</p>
+      <p>© 2022 Jordan Myers</p>
     </footer>
   );
 }
