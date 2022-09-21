@@ -12,13 +12,12 @@ function Header(): JSX.Element {
         {/* <Link className="header__link" to="/resume">
             Resume
           </Link> */}
-          <Link className="header__link" to="/projects">
-            Projects
-          </Link>
-          <Link className="header__link" to="/contact">
-            Contact
-          </Link>
-        </div>
+        <Link className="header__link" to="/projects">
+          Projects
+        </Link>
+        <Link className="header__link" to="/contact">
+          Contact
+        </Link>
       </nav>
     </header>
   );
