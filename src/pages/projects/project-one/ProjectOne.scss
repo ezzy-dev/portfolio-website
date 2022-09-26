@@ -1,0 +1,49 @@
+.project-one {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+
+    &__design,
+    &__implementation {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 128px;
+    }
+
+    &__design-requirements {
+        margin-bottom: 32px;
+    }
+
+    &__design-alternatives,
+    &__design-prototype {
+        p {
+            margin-bottom: 24px !important;
+        }
+    }
+
+    &__requirements-list,
+    &__questions-list,
+    &__answers-list {
+        padding-left: 24px;
+        margin-bottom: 40px;
+    }
+
+    &__questions-sublist {
+        padding-left: 32px;
+        margin-bottom: 40px;
+    }
+
+    &__header {
+        font-size: 48px;
+        text-align: center;
+        margin: 40px 0px;
+        color: #CE5C93;
+    }
+
+    &__subheading,
+    &__super-subheading,
+    p {
+        margin-bottom: 8px;
+    }
+}

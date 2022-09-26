@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "../../components/project-card/ProjectCard";
 import "./Projects.scss";
-import random_img from "../../assets/images/random-img.png";
+import showerhead from "../../assets/images/showerhead.png";
 
 interface Project {
   title: string;
@@ -12,9 +12,10 @@ interface Project {
 
 const project1: Project = {
   title: "Project 1 - Designing a Smart Object UI",
-  router_link: "/projects/project-1",
-  description: "This is a description for project 1",
-  img_path: random_img
+  router_link: "/projects/project-one",
+  description:
+    "This project tasked me to develop a user interface for a smart shower based on design requirements, prototype sketches, and user feedback",
+  img_path: showerhead
 };
 
 function Projects(): JSX.Element {
