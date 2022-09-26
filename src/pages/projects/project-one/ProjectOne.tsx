@@ -1,5 +1,9 @@
 import React from "react";
 import "./ProjectOne.scss";
+import design1 from "../../../assets/images/project-one/design1.jpg";
+import design2 from "../../../assets/images/project-one/design2.jpg";
+import design3 from "../../../assets/images/project-one/design3.jpg";
+import prototype from "../../../assets/images/project-one/prototype.jpg";
 
 function ProjectOne(): JSX.Element {
   return (
@@ -63,9 +67,9 @@ function ProjectOne(): JSX.Element {
             </li>
           </ul>
           <p>
-            After generating this list of design requirements, three individuals
-            were interviewed for feedback. Below are the interview questions
-            asked:
+            After generating this list of design requirements and sketches,
+            three individuals were interviewed for feedback. Below are the
+            interview questions asked:
           </p>
           <ul className="project-one__questions-list">
             <li>
@@ -98,7 +102,30 @@ function ProjectOne(): JSX.Element {
             </ol>
           </ul>
           <p>From these questions, the following feedback was received:</p>
-          <ul className="project-one__answers-list"></ul>
+          <ul className="project-one__answers-list">
+            <li>
+              Most users do not track their water consumption in the shower.
+              This is most likely because there is no easy or convenient way to
+              do this.
+            </li>
+            <li>
+              The primary functionality users would like to see in their smart
+              shower would be to have better control over the temperature and
+              water pressure. Smart phone connectivity was also important, just
+              not as important as temperature and water pressure.
+            </li>
+            <li>
+              From the given list of features, users said they would most prefer
+              having moe granular temperature and pressure controls along with
+              the ability to save their default settings as a profile.
+            </li>
+            <li>
+              One other feature that was suggested by two of the interviewed
+              individuals was voice activation -- although this was not one of
+              my original design requirements it seems like it would be a good
+              additional feature to add down the line.
+            </li>
+          </ul>
         </div>
         <div className="project-one__design-alternatives">
           <h3 className="project-one__super-subheading">Design Alternatives</h3>
@@ -108,6 +135,11 @@ function ProjectOne(): JSX.Element {
             smart object to iterate over using the 10+15min method and came up
             with the following sketches:
           </p>
+          <div className="project-one__alternatives-img">
+            <img src={design1}></img>
+            <img src={design2}></img>
+            <img src={design3}></img>
+          </div>
         </div>
         <div className="project-one__design-prototype">
           <h3 className="project-one__super-subheading">Design Prototype</h3>
@@ -117,9 +149,20 @@ function ProjectOne(): JSX.Element {
             sketches derived from the design alternatives, I generated the
             following UI prototype for the smart shower:
           </p>
+          <div className="project-one__prototype-img">
+            <img src={prototype}></img>
+          </div>
+          <p>
+            From my interviews, everyone said they felt the UI prototype looked
+            clean and user friendly, which is great feedback to get (everyone
+            likes getting it right on the first try)! After asking for any
+            critiques, the one point of feedback I got was that the settings
+            should not use incrementation buttons but rather should use
+            dragging/sliding (as in the temp & pressure prototype).
+          </p>
         </div>
       </div>
-      <h2 className="project-one__subheading">2. Implementation</h2>
+      {/* <h2 className="project-one__subheading">2. Implementation</h2> */}
     </div>
   );
 }

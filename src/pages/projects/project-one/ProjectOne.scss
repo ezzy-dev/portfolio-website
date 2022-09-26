@@ -22,6 +22,18 @@
         }
     }
 
+    &__alternatives-img,
+    &__prototype-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            max-height: 1000px;
+            width: 600px;
+            margin-bottom: 40px;
+        }
+    }
+
     &__requirements-list,
     &__questions-list,
     &__answers-list {
