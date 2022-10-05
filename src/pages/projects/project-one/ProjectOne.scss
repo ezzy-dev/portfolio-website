@@ -25,13 +25,25 @@
     &__alternatives-img,
     &__prototype-img {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-evenly;
         img {
             max-height: 1000px;
-            width: 600px;
-            margin-bottom: 40px;
+            width: 30vw;
+            margin: 0px 8px 40px;
         }
+        p {
+            width: 30vw;
+        }
+    }
+
+    &__prototype-paragraphs {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    &__prototype-img {
+        margin-bottom: 80px;
     }
 
     &__requirements-list,

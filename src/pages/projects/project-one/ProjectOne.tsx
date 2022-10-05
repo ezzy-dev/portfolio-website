@@ -151,18 +151,28 @@ function ProjectOne(): JSX.Element {
           </p>
           <div className="project-one__prototype-img">
             <img src={prototype}></img>
+            <div className="project-one__prototype-paragraphs">
+              <p>
+                From my interviews, everyone said they felt the UI prototype
+                looked clean and user friendly, which is great feedback to get
+                (everyone likes getting it right on the first try)! After asking
+                for any critiques, the one point of feedback I got was that the
+                settings should not use incrementation buttons but rather should
+                use dragging/sliding (as in the temp & pressure prototype).
+              </p>
+              <p>
+                After receiving feedback on my prototype, I was ready to begin{" "}
+                implementation of my interface. To start, my goal was to just
+                develop the &quot;Home&quot; and &quot;Temp & Pressure&quot;
+                tabs to complete my C-level goal.
+              </p>
+            </div>
           </div>
-          <p>
-            From my interviews, everyone said they felt the UI prototype looked
-            clean and user friendly, which is great feedback to get (everyone
-            likes getting it right on the first try)! After asking for any
-            critiques, the one point of feedback I got was that the settings
-            should not use incrementation buttons but rather should use
-            dragging/sliding (as in the temp & pressure prototype).
-          </p>
         </div>
       </div>
-      {/* <h2 className="project-one__subheading">2. Implementation</h2> */}
+      <div className="project-one__implementation">
+        <h2 className="project-one__subheading">2. Implementation</h2>
+      </div>
     </div>
   );
 }
