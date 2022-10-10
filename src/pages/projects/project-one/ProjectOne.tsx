@@ -4,6 +4,8 @@ import design1 from "../../../assets/images/project-one/design1.jpg";
 import design2 from "../../../assets/images/project-one/design2.jpg";
 import design3 from "../../../assets/images/project-one/design3.jpg";
 import prototype from "../../../assets/images/project-one/prototype.jpg";
+import placement from "../../../assets/images/project-one/placement.jpg";
+import Implementation from "../../../implementations/project-one/Implementation";
 
 function ProjectOne(): JSX.Element {
   return (
@@ -172,6 +174,30 @@ function ProjectOne(): JSX.Element {
       </div>
       <div className="project-one__implementation">
         <h2 className="project-one__subheading">2. Implementation</h2>
+        <p>
+          To start off my implementation, I begain by building out a basic UI
+          for my smart object (as required by the C-goals). After generating the
+          prototype sketch as seen in the section above, my goal was to
+          implement a basic UI that reflected the sketch. To do this, I added in
+          three different thinngs -- a display that shows the temperature and
+          pressure, a home screen that shows some statistics about the shower
+          usage, basic controls to turn the shower on/off and to change the
+          water temperature and pressure, and fixed values for temperature and
+          pressure, and controls to set different profiles that have saved
+          values for temperature and pressure.
+        </p>
+        <Implementation />
+        <div className="project-one__prototype-img">
+          <img src={placement}></img>
+          <div className="project-one__prototype-paragraphs">
+            <p>
+              To the left is a sketch of where this interface might reside in a
+              shower. Although it may be impractical or expensive, having a
+              tablet-like item where the shower knob would go seems like the
+              best solution.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -2,13 +2,12 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    align-items: center;
 
     &__design,
     &__implementation {
         display: flex;
         flex-direction: column;
-        margin: 0px 128px;
+        margin: 0px 40px;
     }
 
     &__design-requirements {
@@ -69,5 +68,11 @@
     &__super-subheading,
     p {
         margin-bottom: 8px;
+    }
+
+    &__implementation {
+        .implementation {
+            margin: 32px 0px;
+        }
     }
 }
