@@ -1,4 +1,4 @@
-.implementation {
+.bimplementation {
     width: 1000px;
     height: 450px;
     border: 1px solid darkslategrey;
@@ -7,6 +7,7 @@
     padding: 16px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 64px;
 
     .MuiButtonBase-root {
         font-family: "Poppins";
@@ -69,14 +70,14 @@
             font-size: 24px;
             margin-bottom: 16px;
             border: none;
-            background: #00B8EA;
+            background: #4285F4;
             color: #FAFDF3;
             padding: 8px 16px;
             border-radius: 16px;
             cursor: pointer;
         }
         button:hover {
-            background: #04c9ff;
+            background: #048eff;
         }
     }
 
@@ -99,14 +100,14 @@
             font-size: 24px;
             margin-bottom: 16px;
             border: none;
-            background: #00B8EA;
+            background: #4285F4;
             color: #FAFDF3;
             padding: 8px 16px;
             border-radius: 16px;
             cursor: pointer;
         }
         button:hover {
-            background: #04c9ff;
+            background: #048eff;
         }
     }
 
@@ -131,8 +132,71 @@
         text-align: center;
         margin-right: 16px;
     }
+
+    &__connected-devices {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    &__bluetooth-options,
+    &__bluetooth-header {
+        display: flex;
+    }
+
+    &__bluetooth-header {
+        margin-bottom: 16px;
+    }
+
+    &__bluetooth-options {
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+
+        button {
+            font-size: 24px;
+            margin-bottom: 16px;
+            border: none;
+            background: #4285F4;
+            color: #FAFDF3;
+            padding: 8px 16px;
+            border-radius: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #048eff;
+        }
+    }
+
+    &__bluetooth-title {
+        margin-right: 16px;
+    }
+
+    &__switch-container2 {
+        text-align: center;
+        font-size: 24px;
+        display: flex;
+    }
+
+    &__paired-devices {
+        text-decoration: underline;
+        margin-bottom: 8px;
+    }
+
+    &__margin-top {
+        margin-top: 16px;
+    }
+
+    &__margin-bottom {
+        margin-bottom: 16px;
+    }
+
+    &__current-device {
+        flex: 1;
+        text-align: center;
+    }
 }
 
 .blue {
-    color: #00B8EA;
+    color: #4285F4;
 }

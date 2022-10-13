@@ -5,7 +5,9 @@ import design2 from "../../../assets/images/project-one/design2.jpg";
 import design3 from "../../../assets/images/project-one/design3.jpg";
 import prototype from "../../../assets/images/project-one/prototype.jpg";
 import placement from "../../../assets/images/project-one/placement.jpg";
-import Implementation from "../../../implementations/project-one/Implementation";
+import CLevelImplementation from "../../../implementations/project-one/CLevelImplementation";
+import BLevelImplementation from "../../../implementations/project-one/BLevelImplementation";
+import ALevelImplementation from "../../../implementations/project-one/ALevelImplementation";
 
 function ProjectOne(): JSX.Element {
   return (
@@ -174,6 +176,9 @@ function ProjectOne(): JSX.Element {
       </div>
       <div className="project-one__implementation">
         <h2 className="project-one__subheading">2. Implementation</h2>
+        <h3 className="project-one__super-subheading">
+          C-Level Implementation
+        </h3>
         <p>
           To start off my implementation, I begain by building out a basic UI
           for my smart object (as required by the C-goals). After generating the
@@ -186,7 +191,7 @@ function ProjectOne(): JSX.Element {
           pressure, and controls to set different profiles that have saved
           values for temperature and pressure.
         </p>
-        <Implementation />
+        <CLevelImplementation />
         <div className="project-one__prototype-img">
           <img src={placement}></img>
           <div className="project-one__prototype-paragraphs">
@@ -198,6 +203,37 @@ function ProjectOne(): JSX.Element {
             </p>
           </div>
         </div>
+        <h3 className="project-one__super-subheading">
+          B-Level Implementation
+        </h3>
+        <p>
+          For my B-level implementation, I decided to go with option 2 --
+          connecting to a mock secondary device. One of my design goals involved
+          connecting the smart shower to a secondary device, to serve the
+          purpose of both retrieving notificiations from the users phone and
+          playing music hands-free from the shower. To do this, I added a new
+          tab called phone that would allow users to connect their phone to the
+          smart shower and also see a list of connected devices. By clicking a
+          paired device, users can see basic information about their phone like
+          battery level and number of notifications. Also, by toggling the
+          bluetooth on and off it will show/hide the information.
+        </p>
+        <BLevelImplementation />
+        <h3 className="project-one__super-subheading">
+          A-Level Implementation
+        </h3>
+        <p>
+          For my A-level implementation, I decided to simulate the use of the
+          shower over time. To do this, I hooked into the shower on/off button
+          and used this to toggle the state of the home page. When the shower is
+          turned on, the home page goes from showing data about your average
+          shower usage (i.e. number of weekly showers, average shower time, and
+          water last used). To showing real-time data about your shower (i.e.
+          total time in shower, amount of water used in shower, and average
+          temperature/pressure).{" "}
+          <b>To simulate this, turn the shower on and off</b>
+        </p>
+        <ALevelImplementation />
       </div>
     </div>
   );
