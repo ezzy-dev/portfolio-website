@@ -59,6 +59,7 @@ function BLevelImplementation(): JSX.Element {
   });
 
   const [phone, setPhone] = React.useState({
+    name: "Jordan",
     battery: "90%",
     notifications: 2
   });
@@ -187,13 +188,17 @@ function BLevelImplementation(): JSX.Element {
           <h2 className="bimplementation__paired-devices">Paired Devices</h2>
           <button
             className="bimplementation__margin-top"
-            onClick={() => setPhone({ battery: "90%", notifications: 2 })}
+            onClick={() =>
+              setPhone({ name: "Jordan", battery: "90%", notifications: 2 })
+            }
           >
             Jordan&#39;s Phone
           </button>
           <button
             className="bimplementation__margin-top"
-            onClick={() => setPhone({ battery: "82%", notifications: 0 })}
+            onClick={() =>
+              setPhone({ name: "Jaime", battery: "82%", notifications: 0 })
+            }
           >
             Jaime&#39;s Phone
           </button>
@@ -202,7 +207,7 @@ function BLevelImplementation(): JSX.Element {
           <div className="bimplementation__current-device">
             <h2>Currently Connected Device: </h2>
             <h2 className="bimplementation__margin-bottom">
-              Jordan&#39;s Phone
+              {phone.name}&#39;s Phone
             </h2>
             <div className="bimplementation__battery">
               Battery Level: {phone.battery}

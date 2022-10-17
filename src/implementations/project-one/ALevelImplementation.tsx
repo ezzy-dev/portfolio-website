@@ -60,6 +60,7 @@ function ALevelImplementation(): JSX.Element {
   });
 
   const [phone, setPhone] = React.useState({
+    name: "Jordan",
     battery: "90%",
     notifications: 2
   });
@@ -75,7 +76,7 @@ function ALevelImplementation(): JSX.Element {
     noOfShowers += 0.5;
   };
 
-  const [bluetoothOn, setBluetoothOn] = React.useState(true);
+  const [bluetoothOn, setBluetoothOn] = React.useState(false);
   const handleBluetoothOn = (
     event: React.ChangeEvent<HTMLInputElement>,
     isBluetoothOn: boolean
@@ -251,13 +252,17 @@ function ALevelImplementation(): JSX.Element {
           <h2 className="aimplementation__paired-devices">Paired Devices</h2>
           <button
             className="aimplementation__margin-top"
-            onClick={() => setPhone({ battery: "90%", notifications: 2 })}
+            onClick={() =>
+              setPhone({ name: "Jordan", battery: "90%", notifications: 2 })
+            }
           >
             Jordan&#39;s Phone
           </button>
           <button
             className="aimplementation__margin-top"
-            onClick={() => setPhone({ battery: "82%", notifications: 0 })}
+            onClick={() =>
+              setPhone({ name: "Jaime", battery: "82%", notifications: 0 })
+            }
           >
             Jaime&#39;s Phone
           </button>
@@ -266,7 +271,7 @@ function ALevelImplementation(): JSX.Element {
           <div className="aimplementation__current-device">
             <h2>Currently Connected Device: </h2>
             <h2 className="aimplementation__margin-bottom">
-              Jordan&#39;s Phone
+              {phone.name}&#39;s Phone
             </h2>
             <div className="aimplementation__battery">
               Battery Level: {phone.battery}
