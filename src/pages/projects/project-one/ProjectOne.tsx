@@ -5,6 +5,7 @@ import design2 from "../../../assets/images/project-one/design2.jpg";
 import design3 from "../../../assets/images/project-one/design3.jpg";
 import prototype from "../../../assets/images/project-one/prototype.jpg";
 import placement from "../../../assets/images/project-one/placement.jpg";
+import demovideo from "../../../assets/images/project-one/demovideo.mp4";
 import CLevelImplementation from "../../../implementations/project-one/CLevelImplementation";
 import BLevelImplementation from "../../../implementations/project-one/BLevelImplementation";
 import ALevelImplementation from "../../../implementations/project-one/ALevelImplementation";
@@ -234,6 +235,14 @@ function ProjectOne(): JSX.Element {
           <b>To simulate this, turn the shower on and off</b>
         </p>
         <ALevelImplementation />
+        <h3 className="project-one__super-subheading">Demo Video</h3>
+        <p>
+          Below is a brief video to demonstrate how the smart shower UI works
+        </p>
+        <video width="960" height="540" controls>
+          <source src={demovideo} type="video/mp4" />
+          Your browser does not support HTML5 video
+        </video>
       </div>
     </div>
   );
