@@ -5,6 +5,7 @@ import brainstorm2 from "../../../assets/images/project-two/brainstorm 2-1.jpg";
 import brainstorm3 from "../../../assets/images/project-two/brainstorm 3-1.jpg";
 import interface1 from "../../../assets/images/project-two/interface 1-1.jpg";
 import interface2 from "../../../assets/images/project-two/interface 2-1.jpg";
+import demovideo from "../../../assets/images/project-two/demovideo.mp4";
 
 function ProjectTwo(): JSX.Element {
   return (
@@ -302,7 +303,7 @@ function ProjectTwo(): JSX.Element {
             Below is a brief video to demonstrate how the smart shower UI works
           </p>
           <video width="960" height="540" controls>
-            <source type="video/mp4" />
+            <source src={demovideo} type="video/mp4" />
             Your browser does not support HTML5 video
           </video>
         </div>
