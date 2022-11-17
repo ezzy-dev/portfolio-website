@@ -130,11 +130,11 @@ function ALevelImplementation(): JSX.Element {
               <h2 className="aimplementation__value1">Showers this week</h2>
             </div>
             <div className="aimplementation__col2">
-              <h1 className="aimplementation__value2 blue">0.2 min</h1>
+              <h1 className="aimplementation__value2 blue">0.1 min</h1>
               <h2 className="aimplementation__value2">Average shower time</h2>
             </div>
             <div className="aimplementation__col3">
-              <h1 className="aimplementation__value3 blue">0.2 gal</h1>
+              <h1 className="aimplementation__value3 blue">0.1 gal</h1>
               <h2 className="aimplementation__value3">
                 Water used last shower
               </h2>

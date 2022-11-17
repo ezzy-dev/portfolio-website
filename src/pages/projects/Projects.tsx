@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "../../components/project-card/ProjectCard";
 import "./Projects.scss";
 import showerhead from "../../assets/images/showerhead.png";
+import canvas from "../../assets/images/canvas.png";
 
 interface Project {
   title: string;
@@ -18,6 +19,14 @@ const project1: Project = {
   img_path: showerhead
 };
 
+const project2: Project = {
+  title: "Project 2 - Alterna-Canvas",
+  router_link: "/projects/project-two",
+  description:
+    "This project tasked me and a partner to redesign the school website Canvas based on design requirements, prototype sketches, and user feedback along with the theme 'orgainzation and motivation'",
+  img_path: canvas
+};
+
 function Projects(): JSX.Element {
   return (
     <div className="projects">
@@ -28,6 +37,12 @@ function Projects(): JSX.Element {
           router_link={project1.router_link}
           description={project1.description}
           img_path={project1.img_path}
+        />
+        <ProjectCard
+          title={project2.title}
+          router_link={project2.router_link}
+          description={project2.description}
+          img_path={project2.img_path}
         />
       </div>
     </div>

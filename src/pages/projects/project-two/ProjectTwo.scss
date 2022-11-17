@@ -1,0 +1,95 @@
+.project-two {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    &__header {
+        font-size: 48px;
+        text-align: center;
+        margin: 40px 0px;
+        color: #CE5C93;
+    }
+
+    &__subheading,
+    &__super-subheading,
+    p {
+        margin-bottom: 8px;
+    }
+
+    &__image-subheading {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    &__download {
+        background-color: #41424C;
+        color: white;
+        align-self: center;
+        width: fit-content;
+        padding: 8px;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    &__pre-design,
+    &__research-and-sketching,
+    &__implementation {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 40px;
+    }
+
+    &__choosing-a-theme,
+    &__research-pre-design-prep,
+    &__interview-prep {
+        margin-bottom: 32px;
+    }
+
+    &__interview-response,
+    &__contextual-response,
+    &__sketches,
+    &__work-split,
+    &__project-download,
+    &__demo-video {
+        margin-bottom: 72px;
+    }
+
+    &__project-download {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__alternatives-img,
+    &__prototype-img {
+        display: flex;
+        justify-content: space-around;
+        img {
+            max-height: 1000px;
+            width: 30vw;
+            margin: 0px 8px 40px;
+        }
+    }
+
+
+
+    &__list {
+        padding-left: 24px;
+        margin-bottom: 40px;
+    }
+
+    &__sublist {
+        padding-left: 36px;
+        margin-bottom: 40px;
+    }
+
+    &__implementation {
+        .implementation {
+            margin: 32px 0px;
+        }
+
+        video {
+            align-self: center;
+        }
+    }
+}

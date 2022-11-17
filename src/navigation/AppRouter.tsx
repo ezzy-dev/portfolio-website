@@ -5,6 +5,7 @@ import Contact from "../pages/contact/Contact";
 import Projects from "../pages/projects/Projects";
 import Resume from "../pages/resume/Resume";
 import ProjectOne from "../pages/projects/project-one/ProjectOne";
+import ProjectTwo from "../pages/projects/project-two/ProjectTwo";
 
 function AppRouter(): JSX.Element {
   return (
@@ -15,6 +16,7 @@ function AppRouter(): JSX.Element {
       <Route path="contact" element={<Contact />} />
 
       <Route path="/projects/project-one" element={<ProjectOne />} />
+      <Route path="/projects/project-two" element={<ProjectTwo />} />
     </Routes>
   );
 }
