@@ -3,6 +3,7 @@ import ProjectCard from "../../components/project-card/ProjectCard";
 import "./Projects.scss";
 import showerhead from "../../assets/images/showerhead.png";
 import canvas from "../../assets/images/canvas.png";
+import ar_glasses from "../../assets/images/ar-glasses.jpg";
 
 interface Project {
   title: string;
@@ -27,6 +28,14 @@ const project2: Project = {
   img_path: canvas
 };
 
+const project3: Project = {
+  title: "Project 3 - UC AR-Verse",
+  router_link: "/projects/project-three",
+  description:
+    "This project tasked me and a partner to design and envision user interfaces and interactions with AR content using sketches, wire-framing, prototyping, and deomnstration",
+  img_path: ar_glasses
+};
+
 function Projects(): JSX.Element {
   return (
     <div className="projects">
@@ -43,6 +52,12 @@ function Projects(): JSX.Element {
           router_link={project2.router_link}
           description={project2.description}
           img_path={project2.img_path}
+        />
+        <ProjectCard
+          title={project3.title}
+          router_link={project3.router_link}
+          description={project3.description}
+          img_path={project3.img_path}
         />
       </div>
     </div>

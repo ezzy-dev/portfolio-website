@@ -1,0 +1,116 @@
+.project-three {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0px 128px;
+
+    &__header {
+        font-size: 48px;
+        text-align: center;
+        margin: 40px 0px;
+        color: #CE5C93;
+    }
+
+    &__subheading,
+    &__super-subheading {
+        p {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__list-header {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    &__list-column {
+        padding: 0 16px;
+    }
+
+    &__list-container {
+        display: flex;
+    }
+
+    &__image-subheading {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    &__content-creation,
+    &__mobile-device,
+    &__ar-glasses,
+    &__demo-video {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 40px;
+    }
+
+    &__real-world-sample,
+    &__wireframing,
+    &__finding-content,
+    &__displaying-content,
+    &__content-interaction {
+        margin-bottom: 72px;
+    }
+
+    &__sketches {
+        display: flex;
+        justify-content: space-around;
+        img {
+            max-height: 1000px;
+            width: 30vw;
+            margin: 0px 8px 40px;
+        }
+    }
+    &__wireframe {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__csketches {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    &__image-with-text {
+        display: flex;
+        justify-content: space-evenly;
+        img {
+            max-height: 1000px;
+            width: 30vw;
+            margin: 0px 8px 40px;
+        }
+        p {
+            width: 30vw;
+        }
+    }
+    
+    &__wide-img{
+        max-height: 1000px;
+        width: 60vw !important;
+        margin: 0px 8px 40px;
+    }
+
+    &__image-paragraphs {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding: 16px;
+    }
+
+    &__list {
+        padding-left: 24px;
+        margin-bottom: 40px;
+    }
+
+    &__sublist {
+        padding-left: 36px;
+        margin-bottom: 40px;
+    }
+
+    video {
+        align-self: center;
+        width: 90vw;
+    }
+}
