@@ -17,7 +17,7 @@ import bgoals_interaction2 from "../../../assets/images/project-three/interactio
 import agoals_sketch1 from "../../../assets/images/project-three/agoals_sketch1.png";
 import agoals_sketch2 from "../../../assets/images/project-three/agoals_sketch2.png";
 import agoals_gestures from "../../../assets/images/project-three/agoals_gestures.png";
-import demovideo from "../../../assets/images/project-two/demovideo.mp4";
+import demovideo from "../../../assets/images/project-three/demo_video.mp4";
 
 function ProjectThree(): JSX.Element {
   return (
